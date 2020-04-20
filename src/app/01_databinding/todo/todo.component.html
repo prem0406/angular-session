@@ -1,0 +1,17 @@
+
+<form>
+  <div class="form-group">
+    <div class="badge">{{data.text}}</div>
+    <input type="text" 
+    class="form-control" 
+    id="exampleInputEmail1" 
+    placeholder="Enter Description"
+    #elem
+    (input)="onDescriptionInput(elem.value)">
+
+  </div>
+  
+  <button type="button" class="btn btn-primary" (click) = "onSubmit()">Submit</button>
+</form>
+
+

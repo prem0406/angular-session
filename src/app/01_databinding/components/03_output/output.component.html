@@ -1,0 +1,13 @@
+
+<div class="card text-white bg-primary mb-3">
+    <div class="card-header">
+        Todo Items (@Output())
+    </div>
+    <div class="card-body">
+            <app-todo
+            [data] ="todoItem" 
+            (descriptionChanged)="onDescriptionChanged($event)">
+        </app-todo>
+        
+    </div>
+  </div>

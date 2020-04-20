@@ -1,1 +1,36 @@
-<h1> Data Binding</h1>
+
+<div class="container">
+    <div class="row">
+        
+        
+        <div class="col-sm">
+            <app-basics></app-basics>
+        </div>
+
+        <div class="col-sm">
+            <app-input 
+            [todoItem] ="todoItem"
+            [anotherTodoItem] = "anotherTodoItem"
+            [finalTodoItem] = "finalTodoItem">
+        </app-input>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-sm">
+            <app-output
+            [todoItem] = "todoItem"
+            (descriptionChanged)="onDescriptionChanged($event)">
+            </app-output>
+        </div>
+        <div class="col-sm">
+            
+        </div>
+    </div>
+
+    
+
+</div>
+
+
