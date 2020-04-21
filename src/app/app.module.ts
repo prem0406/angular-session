@@ -4,10 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { DatabindingModule } from './01_databinding/databinding.module';
 import {BuiltInDirectivesModule } from './02_built-in-directives/built-in-directives.module';
+import { PipesModules } from './03_pipes/pipes.module';
 
 const FEATURE_MODULES_TAUGHT = [
   //DatabindingModule,
-  BuiltInDirectivesModule
+  // BuiltInDirectivesModule,
+  PipesModules
 ]
 
 @NgModule({
