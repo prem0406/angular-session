@@ -15,4 +15,16 @@ export class BuiltInDirectivesComponent{
         {id: 5, text: 'Teach Css', completed: false},
 
     ]
+
+    todos: TodoItem[]
+
+    selectedTodo: TodoItem
+
+    onTodoSelected(todo: TodoItem){
+        this.selectedTodo = todo
+    }
+
+    onTodoClosed(){
+        this.selectedTodo = null
+    }
 }
